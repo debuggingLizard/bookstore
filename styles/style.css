@@ -1,0 +1,143 @@
+#content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 16px;
+}
+
+.book-container {
+    width: 420px;
+    border: 8px solid transparent;
+    padding-top: 8px;
+    border-radius: 4px;
+    background-color: #37393a;
+}
+
+.padding-content {
+    padding: 0 4px;
+}
+
+.book-picture {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #0E45D8;
+}
+
+.book-picture img {
+    width: 320px;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    object-position:left;
+}
+
+.book-price-likes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4px;
+}
+
+.book-price-likes>p {
+    color: #d2fc4d;
+    font-weight: bold;
+}
+
+.book-price-likes>div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.book-price-likes>div>p {
+    font-weight: bold;
+}
+
+.book-price-likes svg {
+    cursor: pointer;
+    height: 24px;
+    filter: brightness(0) saturate(100%) invert(41%) sepia(85%) saturate(458%) hue-rotate(314deg) brightness(98%) contrast(88%);
+}
+
+.comments-render-wrapper {
+    height: 160px;
+    overflow: hidden scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #d2fc4d #37393a;
+}
+
+.comments-container>p {
+    display: flex;
+    align-items: stretch;
+    padding: 12px 0 4px;
+}
+
+.comments-username {
+    font-size: 12px;
+    vertical-align: top;
+    font-weight: 600;
+    color: #bdcc91;
+    padding: 1px 1px 4px;
+}
+
+.comments-comment {
+    font-size: 14px;
+    padding: 1px 1px 4px;
+}
+
+.comments-container input {
+    outline: 0;
+    flex: 1;
+    border: 1px solid transparent;
+    border-radius: 4px 0 0 4px;
+    background-color: #3b3e40;
+    color: #F5F5F5;
+}
+
+.comments-container input:focus {
+    border: 1px solid #0E45D8;
+}
+
+.comments-container button {
+    font-family: 'Fontdiner Swanky';
+    border: 1px solid transparent;
+    border-radius: 0 4px 4px 0;
+    background-color: #303335;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+
+.comments-container button:hover {
+    background-color: #d2fc4d;
+    color: #3b3e40;
+    transition: 0.4s;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 32px;
+    }
+    
+    .book-container {
+        width: 340px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    .book-container {
+        width: 280px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .book-picture img {
+        width: 260px;
+    }
+}

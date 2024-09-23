@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Fontdiner Swanky';
+    src: url(../assets/fonts/FontdinerSwanky/FontdinerSwanky-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat';
+}
+
+body {
+    background-color: #2f3132;
+    color: #F5F5F5;
+}
+
+h1 {
+    font-family: 'Fontdiner Swanky';
+    font-size: 42px;
+    text-shadow: 2px 2px 0px #0E45D8, -2px 0px 0px #0E45D8, 4px 4px 0px #d2fc4d, 6px 6px 0px #E36059;
+    margin: 8px 0 16px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.bold {
+    font-weight: bold;
+}
